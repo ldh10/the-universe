@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Universe Loves You.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 class="welcome"></h1>
+
+    <div class="footer">
+        <a href="http://127.0.0.1:5500/verse.html" type="button" class="footer-button">
+            <img src="icons/yin-yang-symbol-variant.png" alt="Icon">
+        </a>
+    </div>
+
+    <script> 
+        /*script: typing animation*/
+        const content = 'This is the Universe. It Loves You.';
+        const welcome = document.querySelector('.welcome');
+        let n = 0;
+
+        const typing = function () {
+            if (n < content.length) {
+                welcome.innerHTML += content[n];
+            }
+
+            if (n === content.length) {
+                // Set cursor opacity to 0 when the text is complete
+                welcome.style.borderRightColor = 'transparent';
+            }
+
+            n++;
+
+            if (n > content.length + 1) {
+                clearInterval(typingInterval);
+                welcome.style.borderRightColor = 'transparent';
+            }
+        };
+
+        const typingInterval = setInterval(typing, 100);
+
+    </script>
+
+</body>
+
+</html>

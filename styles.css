@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+* {
+    font-family: 'Instrument Serif', serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Styles for screens up to 768px wide (typical tablet size) */
+    body {
+        margin: 0;
+        padding: 0;
+        /* Adjust styles for smaller screens */
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Styles for screens up to 480px wide (typical mobile size) */
+    body {
+        margin: 0;
+        padding: 0;
+        /* Adjust styles for even smaller screens */
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://images.unsplash.com/photo-1543722530-d2c3201371e7?q=80&w=2948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 10px 10px 10px;
+    /* Adjust the padding-left value as needed */
+    z-index: 1;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-button {
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0px 0px 0px 0px;
+}
+
+.footer-button img {
+    background-color: aliceblue;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+.welcome {
+    color: aliceblue;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 0.05em solid aliceblue;
+    animation: cursor 0.5s ease infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-color: transparent;
+    }
+}
+
+/* 출처: https: //triplexblog.kr/66 [트리플랩 | TriplexLab:티스토리] */

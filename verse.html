@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universe's message for You</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        @media only screen and (max-width: 768px) {
+
+            /* Styles for screens up to 768px wide (typical tablet size) */
+            body {
+                margin: 0;
+                padding: 0;
+                /* Adjust styles for smaller screens */
+            }
+
+            /* Add more specific styles for smaller screens as needed */
+        }
+
+        @media only screen and (max-width: 480px) {
+
+            /* Styles for screens up to 480px wide (typical mobile size) */
+            body {
+                margin: 0;
+                padding: 0;
+                /* Adjust styles for even smaller screens */
+            }
+
+            /* Add more specific styles for smaller screens as needed */
+        }
+
+        body {
+            background-image: url(https://images.unsplash.com/photo-1537420327992-d6e192287183?q=80&w=3088&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body>.box {
+            width: 2000px;
+            /* Set the width of your box */
+            height: max-content;
+            /* Set the height of your box */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Set the semi-transparent black color */
+
+            /* Add any other styles you need for your box */
+        }
+
+        .quote {
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            padding: 10px 10px 10px 10px;
+            /* Adjust the padding-left value as needed */
+            z-index: 1;
+            background-color: transparent;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .footer-button {
+            background-color: aliceblue;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .footer-button img {
+            background-color: aliceblue;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+
+        .backtofront{
+            background-color: aliceblue;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: 50%;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .backtofront img {
+            background-color: aliceblue;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="quote-container">
+            <p class="quote" id="quote"></p>
+        </div>
+
+        <div class="footer">
+            <!--Yin Yang Button-->
+            <a href="verse.html" type="button" class="footer-button">
+                <img src="icons/yin-yang-symbol-variant.png" alt="Icon">
+            </a>
+            <!--Back Button-->
+            <a href="the-universe.html" type="button" class="backtofront">
+                <img src="icons/back-button.png" alt="Icon">
+            </a>
+        </div>
+
+        <script src="verse.js"></script> <!-- Include your JavaScript file -->
+
+</body>
+
+</html>
