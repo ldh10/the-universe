@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Serif+KR&display=swap');
+
+        * {
+            font-family: 'Noto Serif KR',serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: darkgreen;
+            background-size: contain;
+            background-position: center;
+            background-repeat: repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mylastwords {
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="mylastwords-container">
+        <h1 class="mylastwords"></h1>
+    </div>
+
+    <script>
+        var password = "1108";
+        (function passcodeprotect() {
+            var passcode = prompt("The day I became your boyfriend");
+            while (passcode !== password) {
+                alert("Incorrect PassCode");
+                return passcodeprotect();
+            }
+        }());
+        alert('You came.');
+    </script>
+
+    <script>
+        /*script: typing animation*/
+        const content = '이별을 하고 무작정 영감을 받아 만들기 시작한 웹페이지에는 이틀간 손도 대지 않았다. 목적 없이 그저 존재하고 싶었기에 무목적에 무쓸모인 웹페이지를 만들고 싶었다. 그래서 벽에 부딪힌 것 같다. 종종 내가 나를 착취하고 있는 건 아닐까 하는 생각도 든다. 웹개발을 배우기 시작한 후로 완성한 웹페이지들은 몽땅 그에게 자랑했었다. 어린 시절 동훈이가 엄마의 관심을 끌려고 그림을 그리던 것처럼. 그렇게 웹개발을 열심히 배워서 일주일 만에 완강을 했다. 어쩌면 나는 그에게 보여주고픈 마지막 웹페이지를 만들려고 하고 있는지도 모르겠다. 그래서 구상 중에 그런 문구들이 떠올랐나보다. 너의 지친 마음에 위로가 될 말들. 스스로를 몰아세우기보다 자기 안에 있는 깊은 우주를 경험하라는 말. 그런 말들을 해주고 싶었다. 만약에 웹페이지에 비밀번호를 걸 수 있다면 우리가 사귀기 시작한 날짜로 정하고 싶다. 그리고 이 일기를 써 놓고 싶다. 내 무의식과 창작 욕구가 왜 이런 방향으로 나를 이끌었는지. 왜 내게 웹페이지를 만들도록 했고 왜 이런 생각들을 하게끔 했으며 왜 그런 시들을 쓰도록 했는지. 이제 조금 알 것 같다. 누구를 위한 건지 무엇을 위한 건지 무슨 말이 그토록 하고 싶었던 건지. 동훈아 나는 네가 하고 싶은 거 마음껏 하다가 죽었으면 좋겠어. 하고 싶은 일을 하고, 입고 싶은 옷을 입고, 만나고 싶은 사람을 만나고, 하고 싶은 이야기를 하고. 이 웹페이지가 완성되는 순간에는 내 마음에 향기처럼 남아 있는 네게도 마침표가 찍히지 않을까? 그리고 그 마음은 새로운 이름을 가지게 되지 않을까?';
+        const welcome = document.querySelector('.mylastwords');
+        let n = 0;
+
+        const typing = function () {
+            if (n < content.length) {
+                welcome.innerHTML += content[n];
+            }
+
+            if (n === content.length) {
+                // Set cursor opacity to 0 when the text is complete
+                welcome.style.borderRightColor = 'transparent';
+            }
+
+            n++;
+
+            if (n > content.length + 1) {
+                clearInterval(typingInterval);
+                welcome.style.borderRightColor = 'transparent';
+            }
+        };
+
+        const typingInterval = setInterval(typing, 100);
+
+    </script>
+
+
+</body>
+
+</html>
