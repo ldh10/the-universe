@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+* {
+    font-family: 'Instrument Serif', serif;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Styles for screens up to 768px wide (typical tablet size) */
+    body {
+        margin: 0;
+        padding: 0;
+        /* Adjust styles for smaller screens */
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Styles for screens up to 480px wide (typical mobile size) */
+    body {
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Adjust styles for even smaller screens */
+    }
+
+    /* Add more specific styles for smaller screens as needed */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:rgba(255, 235, 205, 0.5) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}

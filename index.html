@@ -13,12 +13,14 @@
 </head>
 
 <body>
-    <div class="welcome-container">
-        <h1 class="welcome"></h1>
-    </div>
+    <div class="fade-container" id="fade-container">
+        <div class="welcome-container">
+            <h1 class="welcome"></h1>
+        </div>
 
-    <div class="explore">
-        <a href="river.html" type="button" class="btn btn-outline-light">Explore</a>
+        <div class="explore" id="explore-container">
+            <a href="river.html" type="button" class="btn btn-outline-light" id="explore-btn" onclick="fadeOut()">Explore</a>
+        </div>
     </div>
 
     <div class="footer">
@@ -28,10 +30,8 @@
         </a>
     </div>
 
-    </div>
-
     <script>
-        /*script: typing animation*/
+        /* Script: Typing animation */
         const content = 'This is the Universe. It Loves You.';
         const welcome = document.querySelector('.welcome');
         let n = 0;
@@ -55,7 +55,6 @@
         };
 
         const typingInterval = setInterval(typing, 100);
-
     </script>
 
 </body>

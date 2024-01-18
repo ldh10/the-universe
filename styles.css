@@ -47,19 +47,29 @@ body {
 }
 
 .welcome-container {
-    text-align: center;
+    width: var(--text-container-width);
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 3s ease-out;
 }
 
 .welcome {
-    margin-bottom: 20px;
+    color: aliceblue;
+    text-align: center;
+    font: 24px;
 }
 
 .explore {
-    position: fixed;
+    display: none;
     text-align: center;
-    margin-top: 100px; /* Add space above the Explore button */
-    /* opacity: 0; /* Initially set opacity to 0 
-    transition: opacity 1s ease-in-out; /* Add a smooth transition effect */
+}
+
+#explore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
 }
 
 .footer {
@@ -98,7 +108,10 @@ body {
     display: table-cell;
     vertical-align: middle;
     border-right: 0.05em solid aliceblue;
-    animation: cursor 0.5s ease infinite;
+}
+
+.fade-out {
+    opacity: 0;
 }
 
 @keyframes cursor {
